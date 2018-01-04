@@ -10,7 +10,6 @@
 	    incSize *= 2;
 	}
 	} catch(e) {}
-	console.log(incSize)
 	testingArray.length = 0; // clean up memory
 	var decodeArray16 = window.decodeArray16 = function(Uint16ArrayCodes){
 		var res = "", i = 0, length = Uint16ArrayCodes.length;
