@@ -26,11 +26,16 @@ String16js adds a global `window.string16` object for all your strings to use. S
 	</thead>
 	<tbody>
 		<tr>
-			<td>
-```Javascript
-string16.arrayToString
-```			</td>
+			<td><code>string16.arrayToString</code></td>
 			<td>Converts an array of numbers into a uncode string, treating each number in the array as a 16-bit positive integer number that is `>=0`, and `<=65535`, or wrapping it around to a number in that range in a fashion expressible by the `%` modulus operator (i.e. if a number, `x`, in the array is not `0 <= x <= 65535`, then it does `x = x % 65536`. Then if `x < 0`, then it does `x = x + 65536`). </td>
+			<td>
+<pre class="highlight highlight-text-html-basic">
+document.body.insertAdjacentHTML("beforeend", '&lt;pre style="background:#ccc"&gt;' +
+	string16.arrayToString([65, 32, 55357, 56898, 32, 115, 109, 105, 108, 101, 115]) +
+'&lt;/pre&gt;')
+</pre>
+				JS Fiddle link: <>
+			</td>
 		</tr>
 	</tbody>
 </table>
