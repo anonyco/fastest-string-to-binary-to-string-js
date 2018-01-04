@@ -1,4 +1,4 @@
-# string16-js
+# string16js
 A super lightweight javascript utility library for working with high unicode characters
 
 # How to use/install
@@ -17,3 +17,32 @@ Or, if you insterested in not being the laziest possible human being, then you c
 	<h1>Example Domain</h1>
 </body></html>
 ```
+# How to use string16js
+String16js adds a global `window.string16` object for all your strings to use. See the following chart below for what each of theese methods does and an example of how to use it.
+
+
+<table>
+	<thead>
+	</thead>
+	<tbody>
+		<tr>
+			<td>`string16.arrayToString`</td>
+			<td>Converts an array of numbers into a uncode string, treating each number in the array as a 16-bit positive integer number that is `>=0`, and `<=65535`, or wrapping it around to a number in that range in a fashion expressible by the `%` modulus operator (i.e. if a number, `x`, in the array is not `0 <= x <= 65535`, then it does `x = x % 65536`. Then if `x < 0`, then it does `x = x + 65536`). </td>
+		</tr>
+	</tbody>
+</table>
+
+| Tables                             | Description           | Cool  |
+| ---------------------------------- | ------------- | ----- |
+| string16.arrayToString             | ```Javascript
+window.k = function(){
+
+};
+```
+                                                     | $1600 |
+| string16.arrayToString             | right-aligned | $1600 |
+
+
+
+
+
