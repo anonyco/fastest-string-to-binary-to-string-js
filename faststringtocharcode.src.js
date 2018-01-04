@@ -1,6 +1,7 @@
 !function(){
 	"use-strict";
 	var testingArray=[0], incSize=1;
+	var getCharFromInt = String.fromCharCode;
 	try {
 		// test the max chunksize String.fromCharCode can work with
 	while (incSize <= 0x10000){
@@ -26,7 +27,7 @@
 		return res;
 	}
 	/** @nocollapse */
-	window.string16 = {
+	var string16 = {
 		arrayToString: decodeArray16,
 		stringToArray: encodeString16,
 		encode64: function(Uint16String){
@@ -428,5 +429,6 @@
 
 			}
 		}
-	}
+	};
+	window.string16 = string16;
 }();
