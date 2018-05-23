@@ -10,7 +10,7 @@ Or, if you insterested in not being the laziest possible human being, then you c
 ```HTML
 <!doctype html>
 <html><head>
-	<script src="https://www.dropbox.com/s/ll11ftru2az384q/string16.min.js?dl=2" defer=""></script>
+	<script src="https://dl.dropboxusercontent.com/s/ll11ftru2az384q/string16.min.js?dl=0" defer=""></script>
 	<script src="/path/to/other/scripts.js" defer=""></script> <!--replace this with your scripts-->
 	<title>Example Domain</title>
 </head><body>
