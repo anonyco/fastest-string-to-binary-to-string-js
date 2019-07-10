@@ -1,4 +1,4 @@
-# DEPREDICATED IN FAVOR OF https://github.com/anonyco/BestBase64EncoderDecoder
+# DEPREDICATED IN FAVOR OF https://github.com/anonyco/FastestSmallestTextEncoderDecoder
 
 # string16js
 A super lightweight javascript utility library for working with high unicode characters
