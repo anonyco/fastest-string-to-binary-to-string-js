@@ -8,7 +8,7 @@ Simply insert the following line of code into your head before any other scripts
 ```HTML
 <script src="https://dl.dropboxusercontent.com/s/ll11ftru2az384q/string16.min.js?dl=0"></script>
 ```
-Or, if you insterested in not being the laziest possible human being, then you can super speed up you page by adding the `defer=""` attribute to all of your scripts like so. The `defer=""` attribute keeps the scripts executing in the same order, but makes the assumtion your script will not call `document.write`, allowing the browser the parse the whole page before executing the scripts.
+Or, you can super speed up you page by adding the `defer=""` attribute to all of your scripts like so. The `defer=""` attribute keeps the scripts executing in the same order, but makes the assumtion your script will not call `document.write`, allowing the browser the parse the whole page before executing the scripts.
 ```HTML
 <!doctype html>
 <html><head>
